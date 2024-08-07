@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cafe 7 Dream</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="/login/img/icon1.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo">
+            <img src="image/logo.png" alt="">
+        </a>
+        <ul class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="history.html">About</a>
+        </ul>
+    </header>
+        <form class="wrapper" id="form-input" onsubmit="event.preventDefault(); FormSubmit();" autocomplete="off">
+                <div class="input-group">
+                    <input type="text" id="fname" required>
+                    <label for="">Firstname</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="lname" required>
+                    <label for="">Lastname</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="address" required>
+                    <label for="">Address</label>
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="phone" required>
+                    <label for="">Phonenumber</label>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear</button>
+                </div>
+        </form>
+        <div class="information">
+            <section class="set">
+                <table  id="tblContact">
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Address</th>
+                        <th>Phonenumber</th>
+                        <th><img src="image/edit.png" alt=""></th>
+                        <th><img src="image/delete.png" alt=""></th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td id="fname"></td>
+                            <td id="lname"></td>
+                            <td id="address"></td>
+                            <td id="phone"></td>
+                            <td id="edit"></td>
+                            <td id="delete"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <script src="main.js"></script>
+</body>
+</html>
