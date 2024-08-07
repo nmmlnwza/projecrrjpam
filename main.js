@@ -2,10 +2,10 @@ let userSelectd = null;
 
 function Read() {
     let data = {};
-    data["fname"] = document.getElementById("fname").value;
-    data["lname"] = document.getElementById("lname").value;
-    data["address"] = document.getElementById("address").value;
-    data["phone"] = document.getElementById("phone").value;
+    data["idproduct"] = document.getElementById("idproduct").value;
+    data["nameproduct"] = document.getElementById("nameproduct").value;
+    data["details"] = document.getElementById("details").value;
+    data["price"] = document.getElementById("price").value;
     return data;
 }
 
@@ -46,10 +46,10 @@ function Create(data){
 
 function Edit(td){
     userSelectd = td.parentElement.parentElement;
-    document.getElementById("fname").value = userSelectd.cells[0].innerHTML;
-    document.getElementById("lname").value = userSelectd.cells[1].innerHTML;
-    document.getElementById("address").value = userSelectd.cells[2].innerHTML;
-    document.getElementById("phone").value = userSelectd.cells[3].innerHTML;
+    document.getElementById("idproduct").value = userSelectd.cells[0].innerHTML;
+    document.getElementById("nameproduct").value = userSelectd.cells[1].innerHTML;
+    document.getElementById("details").value = userSelectd.cells[2].innerHTML;
+    document.getElementById("price").value = userSelectd.cells[3].innerHTML;
 }
 
 function Update(formData){
@@ -68,9 +68,9 @@ function Delete(td){
 }
 
 function ClearForm(){
-    document.getElementById("fname").value = "";
-    document.getElementById("lname").value = "";
-    document.getElementById("address").value = "";
-    document.getElementById("phone").value = "";
+    document.getElementById("idproduct").value = "";
+    document.getElementById("nameproduct").value = "";
+    document.getElementById("details").value = "";
+    document.getElementById("price").value = "";
     userSelectd = null;
 }
