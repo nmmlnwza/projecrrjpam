@@ -133,6 +133,12 @@ header.shadow{
     letter-spacing: 1px;
     margin-left: 6rem;
 }
+.home-text1 .details{
+    font-size: 1rem;
+    color: var(--bg-color);
+    margin: 0.5rem 0 1.4rem;
+    margin-left: 100px;
+}
 .home-text h3{
     font-size: 1.3rem;
     color: var(--main-color);
